@@ -112,3 +112,27 @@ function startCendekiawanSlider() {
 function stopCendekiawanSlider() {
     clearInterval(cendekiawanInterval);
 }
+
+let vestrasImages = [
+    "images/VestraS-FYP/Screenshot 2026-06-03 223455.png",
+    "images/VestraS-FYP/Screenshot 2026-06-03 223507.png",
+    "images/VestraS-FYP/Screenshot 2026-06-03 223534.png",
+    "images/VestraS-FYP/Screenshot 2026-06-03 223543.png",
+    "images/VestraS-FYP/Screenshot 2026-06-03 223604.png",
+    "images/VestraS-FYP/Screenshot 2026-06-03 223612.png",
+    "images/VestraS-FYP/Screenshot 2026-06-03 223637.png"
+];
+let vestrasIndex = 0;
+let vestrasInterval;
+
+function startVestrasSlider() {
+    const img = document.getElementById("vestras-img");
+    vestrasInterval = setInterval(() => {
+        vestrasIndex = (vestrasIndex + 1) % vestrasImages.length;
+        img.src = vestrasImages[vestrasIndex];
+    }, 1000);
+}
+
+function stopVestrasSlider() {
+    clearInterval(vestrasInterval);
+}
