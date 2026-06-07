@@ -68,7 +68,6 @@ let kitahackImages = [
     "images/KitaHack/IMG_9000.JPG",
     "images/KitaHack/IMG_8634.JPG",
     "images/KitaHack/WhatsApp Image 2025-05-08 at 13.31.16.jpeg",
-    "images/KitaHack/WhatsApp Image 2025-05-08 at 13.31.20.jpeg",
     "images/KitaHack/WhatsApp Image 2025-05-08 at 13.31.14.jpeg"
 ];
 let kitahackIndex = 0;
