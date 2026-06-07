@@ -85,3 +85,31 @@ function startKitaHackSlider() {
 function stopKitaHackSlider() {
     clearInterval(kitahackInterval);
 }
+
+let cendekiawanImages = [
+    "images/AWS_Cendekiawan_hackathon/WhatsApp Image 2026-05-20 at 20.34.57.jpeg",
+    "images/AWS_Cendekiawan_hackathon/WhatsApp Image 2026-05-20 at 20.34.58 (2).jpeg",
+    "images/AWS_Cendekiawan_hackathon/WhatsApp Image 2026-05-20 at 20.34.58 (3).jpeg",
+    "images/AWS_Cendekiawan_hackathon/WhatsApp Image 2026-05-20 at 20.34.59.jpeg",
+    "images/AWS_Cendekiawan_hackathon/WhatsApp Image 2026-05-20 at 20.41.03.jpeg",
+    "images/AWS_Cendekiawan_hackathon/WhatsApp Image 2026-05-20 at 18.58.24.jpeg",
+    "images/AWS_Cendekiawan_hackathon/Screenshot 2026-05-21 105310.png",
+    "images/AWS_Cendekiawan_hackathon/Screenshot 2026-05-21 105322.png",
+    "images/AWS_Cendekiawan_hackathon/Screenshot 2026-05-21 105336.png",
+    "images/AWS_Cendekiawan_hackathon/Screenshot 2026-05-21 105352.png",
+    "images/AWS_Cendekiawan_hackathon/Screenshot 2026-05-21 105402.png"
+];
+let cendekiawanIndex = 0;
+let cendekiawanInterval;
+
+function startCendekiawanSlider() {
+    const img = document.getElementById("cendekiawan-img");
+    cendekiawanInterval = setInterval(() => {
+        cendekiawanIndex = (cendekiawanIndex + 1) % cendekiawanImages.length;
+        img.src = cendekiawanImages[cendekiawanIndex];
+    }, 1000);
+}
+
+function stopCendekiawanSlider() {
+    clearInterval(cendekiawanInterval);
+}
